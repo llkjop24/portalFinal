@@ -5,6 +5,7 @@ import com.board.mapper.BoardMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -15,8 +16,8 @@ public class BoardListController {
     private BoardMapper boardMapper;
 
     @RequestMapping("/board")
-    public List<BoardVO> board() throws Exception {
+    public ModelAndView board() throws Exception {
         List<BoardVO> board = boardMapper.boardList();
-        return board;
+        return new ModelAndView("boardList","list",board);
     }
 }
