@@ -38,4 +38,6 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.16.20'
     compile("org.mybatis:mybatis-spring")
     compile("org.mybatis:mybatis")
+    compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+    compile('javax.servlet:jstl')
 }

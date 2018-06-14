@@ -11,4 +11,8 @@
         (#{bno},#{subject},#{content},#{writer},now(),0)
     </insert>
 
+    <select id="boardList" resultType="com.board.domain.BoardVO">
+        select * from board_pro
+    </select>
+
 </mapper>
