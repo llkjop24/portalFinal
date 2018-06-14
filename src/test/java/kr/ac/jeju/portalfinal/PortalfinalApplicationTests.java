@@ -1,5 +1,7 @@
 package kr.ac.jeju.portalfinal;
 
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,9 @@ public class PortalfinalApplicationTests {
     @Autowired
     private DataSource ds;
 
+    @Autowired
+    private SqlSessionFactory sqlSession;
+
     @Test
     public void contextLoads() {
     }
@@ -32,6 +37,11 @@ public class PortalfinalApplicationTests {
         System.out.println("con : " + con);
 
         con.close();
+    }
+
+    @Test
+    public void testSqlSession(){
+        System.out.println("sqlSession;" + sqlSession);
     }
 
 }
