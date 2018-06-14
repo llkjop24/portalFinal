@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/portalfinal.iml" filepath="$PROJECT_DIR$/portalfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/portalfinal_main.iml" filepath="$PROJECT_DIR$/.idea/modules/portalfinal_main.iml" group="portalfinal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/portalfinal_test.iml" filepath="$PROJECT_DIR$/.idea/modules/portalfinal_test.iml" group="portalfinal" />
+    </modules>
+  </component>
+</project>
