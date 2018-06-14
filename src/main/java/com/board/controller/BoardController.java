@@ -3,21 +3,27 @@ package com.board.controller;
 import com.board.domain.BoardVO;
 import com.board.mapper.BoardMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
-@RestController
+@Controller
+@RequestMapping("/board")
 public class BoardController {
 
     @Autowired
     private BoardMapper boardMapper;
 
-    @RequestMapping("/board")
-    public ModelAndView board() throws Exception {
-        List<BoardVO> board = boardMapper.boardList();
-        return new ModelAndView("boardList","list",board);
+
+    //게시글 목록
+    @RequestMapping(method=RequestMethod.GET)
+    public ModelAndView list() throws Exception{
+
+        List<BoardVO> list = boardMapper.boardList();
+
+        return new ModelAndView("boardList","list",list);
     }
 
     //게시글 작성 페이지(GET)
@@ -63,6 +69,7 @@ public class BoardController {
 
         return "redirect://localhost:8080/board/"+bno;
     }
+
     //게시글 삭제(DELETE)
     @RequestMapping(value="/post/{bno}", method=RequestMethod.DELETE)
     public String delete(@PathVariable("bno") int bno) throws Exception{

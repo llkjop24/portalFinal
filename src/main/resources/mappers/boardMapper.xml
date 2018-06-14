@@ -30,5 +30,4 @@
     <delete id="boardDelete" parameterType="int">
         delete from board_pro where bno = #{bno}
     </delete>
-
 </mapper>
