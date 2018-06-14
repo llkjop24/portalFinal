@@ -35,6 +35,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-jdbc')
     compile('mysql:mysql-connector-java')
     compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
+    compileOnly 'org.projectlombok:lombok:1.16.20'
     compile("org.mybatis:mybatis-spring")
     compile("org.mybatis:mybatis")
 }

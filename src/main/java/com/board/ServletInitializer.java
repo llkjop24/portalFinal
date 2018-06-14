@@ -1,4 +1,4 @@
-package kr.ac.jeju.portalfinal;
+package com.board;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

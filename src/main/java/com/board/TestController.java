@@ -1,4 +1,4 @@
-package kr.ac.jeju.portalfinal;
+package com.board;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

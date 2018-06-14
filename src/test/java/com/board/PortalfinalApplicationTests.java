@@ -1,6 +1,7 @@
-package kr.ac.jeju.portalfinal;
+package com.board;
 
-import org.apache.ibatis.annotations.Param;
+import com.board.domain.BoardVO;
+import com.board.mapper.BoardMapper;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,6 +25,9 @@ public class PortalfinalApplicationTests {
     @Autowired
     private SqlSessionFactory sqlSession;
 
+    @Autowired
+    private BoardMapper mapper;
+
     @Test
     public void contextLoads() {
     }
@@ -44,4 +48,16 @@ public class PortalfinalApplicationTests {
         System.out.println("sqlSession;" + sqlSession);
     }
 
+    @Test
+    public void testMapper() throws Exception{//작성
+
+        BoardVO vo = new BoardVO();
+
+        vo.setSubject("제목입니다.");
+        vo.setContent("내용입니다.");
+        vo.setWriter("작성자입니다.");
+
+        mapper.boardInsert(vo);
+
+    }
 }
