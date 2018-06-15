@@ -26,8 +26,8 @@ body {
     width: 380px;
     min-width: 320px;
     height: 200px;
-    margin: 60px auto;
-    margin-left:20px;
+    margin: 90px auto;
+    margin-left:90px;
 }
 
 .form3 {
@@ -43,7 +43,8 @@ body {
 }
 
 .form4 {
-    padding: 0px 0px 0px 70px;
+    padding: 0px 0px 0px px;
+    margin-top: 20px;
 }
 
 #wrap {
@@ -73,6 +74,7 @@ input[type="button"] {
     font-family:"맑은 고딕";
     margin-top:10px;
     margin-right:20px;
+    margin-left:30px
 }
 input[type="checkbox"] {
     margin-top:20px;

@@ -19,8 +19,8 @@
     <title>게시글 목록</title>
 </head>
 <body>
-<h3>게시글 목록</h3>
-<button class="btn btn-primary" style="float : right;" onclick="location.href='/board/post'">작성</button>
+<h3>우리들 게시판</h3>
+<button class="btn btn-primary" style="float : right;margin-right: 20px;margin-bottom: 10px;" onclick="location.href='/board/post'">작성</button>
 <table class="table">
     <tr>
         <th>No</th>

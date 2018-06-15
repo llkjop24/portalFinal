@@ -8,8 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link href="../css/login.css" rel="stylesheet" type="text/css">
+
     <title>Title</title>
+    <link href="/css/login.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <form>
@@ -18,11 +20,13 @@
         <div class="form">
             <div class="form2">
                 <div class="form3">
-                    <label for="user">아이디</label><input type="text" id="user">
+                    <label style="    margin-bottom: 20px;">아이디</label><input type="text" >
                     <div class="clear"></div>
-                    <label for="user">비밀번호</label><input type="password" id="user">
+                    <label>비밀번호</label><input type="password">
                 </div>
-                \<input type="submit" value="로그인하기">
+
+                    <input type="button" value="로그인하기" onclick="location.href='/board'">
+
                 <div class="clear"></div>
                 <div class="form4">
                     <div class="clear"></div>
