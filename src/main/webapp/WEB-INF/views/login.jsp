@@ -20,13 +20,14 @@
         <div class="form">
             <div class="form2">
                 <div class="form3">
-                    <label style="    margin-bottom: 20px;">아이디</label><input type="text" >
-                    <div class="clear"></div>
-                    <label>비밀번호</label><input type="password">
+                    <form action="/login/loginCheck">
+                        <label style="    margin-bottom: 20px;">아이디</label><input type="text" name="id" placeholder="Username">
+                        <div class="clear"></div>
+                        <label>비밀번호</label><input type="password" name="password" placeholder="Password">
+                        <input type="submit" value="로그인하기">
+                    </form>
+
                 </div>
-
-                    <input type="button" value="로그인하기" onclick="location.href='/board'">
-
                 <div class="clear"></div>
                 <div class="form4">
                     <div class="clear"></div>

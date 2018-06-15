@@ -1,0 +1,24 @@
+<?xml versi<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+    <mapper namespace="com.board.login.LoginInfo">
+    <resultMap id="LoginInfoResult" type="com.board.login.LoginInfo">
+        <result column="ID" property="id"/>
+        <result column="PASSWORD" property="password"/>
+    </resultMap>
+
+    <select id="loginCheck" resultType="integer" parameterType="com.board.login.LoginInfo">
+      select count(*) from user;
+        <where>
+            id= #{id}
+            password = #{password}
+        </where>
+    </select>
+
+    <select id="totalAccount" resultType="integer">
+        SELECT COUNT(*) from user
+    </select>
+
+</mapper>
