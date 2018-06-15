@@ -1,0 +1,19 @@
+div {
+    border: solid 1px;
+}
+
+input{
+    margin-right: 10px;
+}
+
+#button{
+    border: none;
+    width : max-content;
+    margin: auto;
+}
+
+form {
+    display: inline;
+}
+
+

@@ -17,6 +17,7 @@
     <!-- BootStrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link href="/css/boardView.css" rel="stylesheet" type="text/css">
     <title>게시글 상세</title>
 </head>
 <body>
@@ -42,7 +43,7 @@
         <label>내용</label>
         <p>${board.content}</p>
     </div>
-    <div class="form-group">
+    <div class="form-group" id="button">
         <input type="button" value="수정" onclick='location.href="/board/post/${board.bno}"'>
         <form:form action="/board/post/${board.bno}" method="DELETE">
             <input type="submit" value="삭제">
