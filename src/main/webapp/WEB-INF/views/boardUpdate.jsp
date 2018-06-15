@@ -5,8 +5,7 @@
   Time: PM 10:31
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
@@ -24,7 +23,7 @@
 <body>
 <h3>게시글 수정</h3>
 <div style="padding : 30px;">
-    <form:form commandName="BoardVO" action="/board/post/${board.bno}" method="PATCH">
+    <form:form modelAttribute="board" action="/board/post/${board.bno}" method="PATCH">
         <div class="form-group">
             <label>제목</label>
             <input type="text" name="subject" value="${board.subject}" class="form-control">
