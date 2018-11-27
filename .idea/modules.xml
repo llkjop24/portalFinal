@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/portalFinal.iml" filepath="$PROJECT_DIR$/.idea/portalFinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/portalfinal.iml" filepath="$PROJECT_DIR$/portalfinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/portalfinal_main.iml" filepath="$PROJECT_DIR$/.idea/modules/portalfinal_main.iml" group="portalfinal" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/portalfinal_test.iml" filepath="$PROJECT_DIR$/.idea/modules/portalfinal_test.iml" group="portalfinal" />
